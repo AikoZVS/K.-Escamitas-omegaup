@@ -1,32 +1,34 @@
-# Prerequisites
-*.d
+#include<iostream>
+using namespace std;
+int main(){
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+	int n;
+	cout<<"muestre el grado de agua pata escamitas:"<<endl;
+	cin>>n;
+	switch(n<15){
+		case 1:cout<<"fria!"<<endl<<"RIP escamitas :("<<endl;
+		cin>>n;
+		break;
+	}
+	switch(n<21){
+		case 1:cout<<"fria!";
+		cin>>n;
+		break;
+	}
+	switch(n<29){
+		case 1:cout<<"tibia";
+		cin>>n;
+		break;
+	}
+	switch(n<35){
+		case 1:cout<<"caliente!";
+		cin>>n;
+		break;
+	}
+	switch(100>n){
+		case 1:cout<<"caliente!"<<endl<<"RIP escamitas :("<<endl;
+		cin>>n;
+		break;
+	}
+	return 0;
+}
